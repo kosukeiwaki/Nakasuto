@@ -1,0 +1,633 @@
+@charset "UTF-8";
+/*resetCSS*/
+html, body, h1, h2, h3, h4,
+ul, ol, dl, li, dt, dd, p, div, span,
+img, a, table, tr, th, td, figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article, header, footer, aside, figure, figcaption, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+}
+
+ol, ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.titleFirst {
+  font-size: 40px;
+  color: #eea639;
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 100vh;
+  background-color: #FFFFEE;
+}
+
+header .navbar-light {
+  padding: 0px;
+}
+
+header .logo {
+  height: 100px;
+}
+
+header .nav-item {
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+}
+
+header .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #585858;
+  transition: .3s;
+  transform: translateX(-50%);
+}
+
+header .nav-item:hover::after {
+  width: 100%;
+}
+
+.mainbg {
+  background-image: url(img/mainbg.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  margin: 0 auto;
+  height: 600px;
+  padding-top: 100px;
+}
+
+.mainbg img {
+  height: 100px;
+}
+
+.mainbg h1 {
+  font-family: 'Rock Salt', cursive;
+  color: white;
+  position: relative;
+  top: 120px;
+  right: -70px;
+  font-size: 60px;
+  transform: rotate(-15deg);
+}
+
+.mainbg p {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-size: 12px;
+  color: white;
+  position: relative;
+  top: 142px;
+  right: -510px;
+  font-size: 30px;
+  transform: rotate(-15deg);
+  display: inline-block;
+}
+
+#menu {
+  float: left;
+}
+
+#menu .nav-item {
+  margin-right: 5px;
+}
+
+#consept {
+  padding: 100px 0 100px 0;
+  background-color: #FFFFEE;
+  text-align: center;
+  position: relative;
+}
+
+#consept .box {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#consept .box img {
+  height: 300px;
+  z-index: 5;
+}
+
+#consept .box .text {
+  font-size: 15px;
+  width: 35%;
+  height: 300px;
+  font-family: "Kosugi Maru";
+  letter-spacing: 2px;
+  line-height: 30px;
+  z-index: 5;
+}
+
+#consept .box .text h2 {
+  font-family: 'Kanit', sans-serif;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#consept .box .text h3 {
+  font-size: 20px;
+}
+
+#consept::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 200px 100vw;
+  border-color: transparent transparent #F8FBEF transparent;
+}
+
+#person {
+  padding: 100px 0 100px 0;
+  background-color: #F8FBEF;
+  text-align: center;
+  position: relative;
+}
+
+#person h2 {
+  display: inline-block;
+}
+
+#person .box {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#person .box img {
+  height: 300px;
+  z-index: 5;
+}
+
+#person .box .text {
+  font-size: 15px;
+  width: 35%;
+  height: 300px;
+  font-family: "Kosugi Maru";
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+#person .box .text h2 {
+  font-family: 'Kanit', sans-serif;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#person .box .text h3 {
+  font-size: 20px;
+}
+
+#person .box .text h3 a {
+  color: #585858;
+  padding-left: 5px;
+  font-size: 25px;
+}
+
+#person::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 100vw 0 0;
+  border-color: transparent #FFFFEE  transparent transparent;
+}
+
+#sand {
+  padding: 100px 0 100px 0;
+  background-color: #FFFFEE;
+  text-align: center;
+  position: relative;
+}
+
+#sand .box {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#sand .box img {
+  height: 300px;
+  z-index: 5;
+}
+
+#sand .box .text {
+  font-size: 15px;
+  width: 35%;
+  height: 300px;
+  font-family: "Kosugi Maru";
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+#sand .box .text h2 {
+  font-family: 'Kanit', sans-serif;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#sand .box .text h3 {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+#sand::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 0 0 100vw;
+  border-color: transparent transparent transparent  #F8FBEF;
+}
+
+#coffee {
+  padding: 100px 0 100px 0;
+  background-color: #F8FBEF;
+  text-align: center;
+  position: relative;
+}
+
+#coffee .box {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#coffee .box img {
+  height: 300px;
+  z-index: 5;
+}
+
+#coffee .box .text {
+  font-size: 15px;
+  width: 35%;
+  height: 300px;
+  font-family: "Kosugi Maru";
+  letter-spacing: 2px;
+  line-height: 30px;
+  z-index: 5;
+}
+
+#coffee .box .text h2 {
+  font-family: 'Kanit', sans-serif;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#coffee .box .text h3 {
+  font-size: 20px;
+}
+
+#coffee::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 0 0 100vw;
+  border-color: transparent transparent transparent  #FFFFEE;
+}
+
+#price {
+  padding: 100px 0 100px 0;
+  background-color: #FFFFEE;
+  text-align: center;
+  position: relative;
+}
+
+#price h2 {
+  font-family: 'Kanit', sans-serif;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#price .prices {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 70%;
+}
+
+#price .prices .priceDetail {
+  width: 50%;
+  padding-right: 40px;
+  z-index: 5;
+}
+
+#price .prices .priceDetail h3 {
+  font-family: 'Kosugi Maru';
+  display: block;
+  font-size: 20px;
+  padding: 20px 0 20px 0;
+  text-align: left;
+}
+
+#price .prices .priceDetail .secondMenu {
+  padding-top: 25px;
+}
+
+#price .prices .priceDetail p {
+  display: block;
+  font-family: 'Kosugi Maru';
+  border-bottom: 1px #585858 solid;
+  padding: 20px 0 20px 0;
+  text-align: left;
+  z-index: 5;
+}
+
+#price .prices .priceDetail p span {
+  font-size: 12px;
+}
+
+#price::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 100vw 0 0;
+  border-color: transparent #F8FBEF transparent  transparent;
+}
+
+#reserve {
+  padding: 100px 0 100px 0;
+  background-color: #F8FBEF;
+  text-align: center;
+  position: relative;
+}
+
+#reserve h2 {
+  font-family: 'Kanit', sans-serif;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#reserve p {
+  font-family: 'Kosugi Maru';
+  line-height: 30px;
+}
+
+#reserve .reservedate {
+  display: inline;
+}
+
+#reserve .reservedate p {
+  text-align: center;
+}
+
+#reserve a {
+  padding: 0 10px;
+  background-image: linear-gradient(to right, transparent 50%, #3a3a3a 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  transition: .3s;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  border: solid 2px black;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#reserve a:hover {
+  background-position: -100% 0;
+  color: #fff;
+}
+
+#reserve::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 0 0 100vw;
+  border-color: transparent transparent transparent #FFFFEE;
+}
+
+#info {
+  padding: 100px 0 100px 0;
+  background-color: #FFFFEE;
+  text-align: center;
+  position: relative;
+}
+
+#info .box {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#info .box .calendar-title {
+  text-align: center;
+  font-family: 'Kosugi Maru';
+}
+
+#info .box .calendar-table {
+  margin: 0 auto;
+  font-family: 'Kosugi Maru';
+}
+
+#info .box .calendar-table .is-today {
+  color: red;
+}
+
+#info .box .calendar-table th {
+  font-size: 24px;
+  text-align: center;
+}
+
+#info .box .calendar-table td {
+  font-size: 24px;
+  width: 45px;
+  height: 45px;
+  line-height: 25px;
+  text-align: center;
+}
+
+#info .box img {
+  height: 300px;
+}
+
+#info .box .text {
+  width: 50%;
+  height: 300px;
+  font-family: 'Kosugi Maru';
+  line-height: 30px;
+  font-size: 14px;
+}
+
+#info .box .text h2 {
+  font-family: 'Kanit', sans-serif;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#info .box .text .timePlaceAccess {
+  display: flex;
+}
+
+#info::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 100vw 0 0;
+  border-color: transparent #F8FBEF transparent  transparent;
+}
+
+#info::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 100vw 0 0;
+  border-color: transparent #F8FBEF transparent  transparent;
+}
+
+#snap {
+  padding: 100px 0 100px 0;
+  background-color: #F8FBEF;
+}
+
+#snap .snapBox {
+  /* cell number */
+}
+
+#snap .snapBox * {
+  box-sizing: border-box;
+}
+
+#snap .snapBox body {
+  font-family: sans-serif;
+}
+
+#snap .snapBox .carousel {
+  background: #F8FBEF;
+}
+
+#snap .snapBox .carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+#snap .snapBox .carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+#snap .snapBox .snapMovie {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#snap .snapBox .snapMovie h2 {
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+#snap .snapBox .snapMovie p {
+  font-family: 'Kosugi Maru';
+  margin: 0 auto;
+}
+
+#snap .snapBox .snapMovie .imagebox {
+  text-align: center;
+}
+
+#snap .snapBox .snapMovie .imagebox img {
+  height: 200px;
+  width: 30%;
+  padding: 10px;
+}
+
+footer {
+  background-color: #585858;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}

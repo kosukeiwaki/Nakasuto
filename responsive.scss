@@ -1,0 +1,174 @@
+@media (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+  
+  .heading h2 {
+    font-size: 20px;
+  }
+}
+
+/* スマホ向けレイアウト */
+@media (max-width: 670px) {
+
+  .container{
+    nav{
+      padding: 0;
+    }
+    .logo{
+      height: 80px;
+    }
+  }
+
+  .mainbg{
+    width: 100%;
+    h1{
+      font-size: 20px;
+      right:-10px;
+      top:100;
+      line-height:50px;
+      display: inline;
+    }
+    p{
+      display: none;
+      // right:-30px;
+      // top:250px;
+    }
+  }
+
+  #consept{
+    padding: 10px;
+    .box{
+      width: 100%;
+      padding: 10px;
+      display:flex;
+      flex-direction: column-reverse;
+      img{
+        width:100%;
+        height: 250px;
+      }
+      .text{
+        width: 100%;
+      }
+    }
+  }
+
+  #person{
+    padding: 10px;
+    .box{
+      width: 100%;
+      padding: 10px;
+      display:flex;
+      flex-direction: column;
+      img{
+        width:100%;
+        height: 250px;
+      }
+      .text{
+        width: 100%;
+      }
+    }
+  }
+
+  #sand{
+    padding: 10px;
+    .box{
+      width: 100%;
+      padding: 10px;
+      display:flex;
+      flex-direction: column-reverse;
+      img{
+        width:100%;
+        height: 250px;
+      }
+      .text{
+        width: 100%;
+      }
+    }
+  }
+
+  #coffee{
+    padding: 10px;
+    .box{
+      width: 100%;
+      padding: 10px;
+      display:flex;
+      flex-direction: column;
+      img{
+        width:100%;
+        height: 250px;
+      }
+      .text{
+        width: 100%;
+      }
+    }
+  }
+
+  #price{
+    padding: 10px;
+    .prices{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .priceDetail{
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+
+  #info{
+    padding: 10px;
+    .box{
+      width: 100%;
+      padding: 10px;
+      display:flex;
+      flex-direction: column-reverse;
+      .daybox{
+        z-index: 5;
+      }
+      .calendar-title{
+        font-size: 16px;
+        padding-top: 20px;
+      }
+      .text{
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  #snap{
+    padding: 10px;
+    .snapBox{
+      display: flex;
+      flex-direction: column;
+      .carousel-cell {
+        width: 100%; /* full width */
+        height: 200px;
+        background: #222;
+        /* center images in cells with flexbox */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .carousel.is-fullscreen .carousel-cell {
+        height: 100%;
+      }
+      
+      .carousel-cell img {
+        display: block;
+        max-height: 100%;
+      }
+      .snapMovie{
+        width: 100%;
+      }
+    }
+  }
+}

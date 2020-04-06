@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@media (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+  .heading h2 {
+    font-size: 20px;
+  }
+}
+
+/* スマホ向けレイアウト */
+@media (max-width: 670px) {
+  .container nav {
+    padding: 0;
+  }
+  .container .logo {
+    height: 80px;
+  }
+  .mainbg {
+    width: 100%;
+  }
+  .mainbg h1 {
+    font-size: 20px;
+    right: -10px;
+    top: 100;
+    line-height: 50px;
+    display: inline;
+  }
+  .mainbg p {
+    display: none;
+  }
+  #consept {
+    padding: 10px;
+  }
+  #consept .box {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #consept .box img {
+    width: 100%;
+    height: 250px;
+  }
+  #consept .box .text {
+    width: 100%;
+  }
+  #person {
+    padding: 10px;
+  }
+  #person .box {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  #person .box img {
+    width: 100%;
+    height: 250px;
+  }
+  #person .box .text {
+    width: 100%;
+  }
+  #sand {
+    padding: 10px;
+  }
+  #sand .box {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #sand .box img {
+    width: 100%;
+    height: 250px;
+  }
+  #sand .box .text {
+    width: 100%;
+  }
+  #coffee {
+    padding: 10px;
+  }
+  #coffee .box {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  #coffee .box img {
+    width: 100%;
+    height: 250px;
+  }
+  #coffee .box .text {
+    width: 100%;
+  }
+  #price {
+    padding: 10px;
+  }
+  #price .prices {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #price .prices .priceDetail {
+    width: 100%;
+    padding: 0;
+  }
+  #info {
+    padding: 10px;
+  }
+  #info .box {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #info .box .daybox {
+    z-index: 5;
+  }
+  #info .box .calendar-title {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  #info .box .text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #snap {
+    padding: 10px;
+  }
+  #snap .snapBox {
+    display: flex;
+    flex-direction: column;
+  }
+  #snap .snapBox .carousel-cell {
+    width: 100%;
+    /* full width */
+    height: 200px;
+    background: #222;
+    /* center images in cells with flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #snap .snapBox .carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+  }
+  #snap .snapBox .carousel-cell img {
+    display: block;
+    max-height: 100%;
+  }
+  #snap .snapBox .snapMovie {
+    width: 100%;
+  }
+}
